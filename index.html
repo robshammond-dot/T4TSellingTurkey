@@ -122,6 +122,34 @@
   .print-btn { position: fixed; top: 20px; right: 20px; background: var(--navy); color: #fff; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 12.5px; padding: 10px 18px; border-radius: 999px; border: none; cursor: pointer; box-shadow: 0 4px 14px rgba(10,82,160,0.35); z-index: 50; display: flex; align-items: center; gap: 6px; }
   .print-btn:hover { background: var(--navy-deep); }
 
+  /* ---- Mobile responsiveness ---- */
+  @media (max-width: 640px) {
+    body { font-size: 14px; }
+    .hero { padding: 24px 16px 32px; }
+    .hero-top { margin-bottom: 20px; }
+    .logo-chip { padding: 8px 12px; }
+    .logo-chip img { height: 30px; }
+    .hero-meta { font-size: 10px; }
+    .hero h1 { font-size: 30px; }
+    .hero h2 { font-size: 17px; }
+    .hero p.sub { font-size: 13.5px; margin-bottom: 16px; }
+    .stat-pill { font-size: 9.5px; padding: 6px 11px; }
+    .toc-wrap { padding: 0 16px; margin: -16px auto 20px; }
+    .toc-card { padding: 14px 16px; }
+    .wrap { padding: 0 16px; }
+    section.block { padding: 20px 16px; margin-bottom: 14px; }
+    h2.section-title { font-size: 17px; }
+    h2.section-title .num { width: 23px; height: 23px; font-size: 11px; }
+    h3.sub-title { font-size: 14px; }
+    h4.card-title { font-size: 14.5px; }
+    table.spec { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
+    table.spec th, table.spec td { padding: 8px 10px; font-size: 12.5px; }
+    .photo-card img { height: 190px; }
+    .map-figure.small img, .map-figure.crete img { max-width: 100%; }
+    .print-btn { top: 12px; right: 12px; padding: 8px 14px; font-size: 11px; }
+    details.island > summary { padding: 12px 14px; font-size: 14px; }
+  }
+
   @media print {
     .print-btn { display: none !important; }
     body { padding: 0; background: #fff; }
